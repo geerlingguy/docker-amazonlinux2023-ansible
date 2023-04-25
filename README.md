@@ -1,8 +1,8 @@
-# Amazon Linux 2022 Ansible Test Image
+# Amazon Linux 2023 Ansible Test Image
 
-[![CI](https://github.com/geerlingguy/docker-amazonlinux2022-ansible/workflows/Build/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/docker-amazonlinux2022-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-amazonlinux2022-ansible)](https://hub.docker.com/r/geerlingguy/docker-amazonlinux2022-ansible/)
+[![CI](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/workflows/Build/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-amazonlinux2023-ansible)](https://hub.docker.com/r/geerlingguy/docker-amazonlinux2023-ansible/)
 
-Amazon Linux 2022 Docker container for Ansible playbook and role testing.
+Amazon Linux 2023 Docker container for Ansible playbook and role testing.
 
 ## Tags
 
@@ -16,13 +16,13 @@ This image is built on Docker Hub automatically any time the upstream OS contain
 
   1. [Install Docker](https://docs.docker.com/engine/installation/).
   2. `cd` into this directory.
-  3. Run `docker build -t amazonlinux2022-ansible .`
+  3. Run `docker build -t amazonlinux2023-ansible .`
 
 ## How to Use
 
   1. [Install Docker](https://docs.docker.com/engine/installation/).
-  2. Pull this image from Docker Hub: `docker pull geerlingguy/docker-amazonlinux2022-ansible:latest` (or use the image you built earlier, e.g. `amazonlinux2022-ansible:latest`).
-  3. Run a container from the image: `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host geerlingguy/docker-amazonlinux2022-ansible:latest` (to test my Ansible roles, I add in a volume mounted from the current working directory with ``--volume=`pwd`:/etc/ansible/roles/role_under_test:ro``).
+  2. Pull this image from Docker Hub: `docker pull geerlingguy/docker-amazonlinux2023-ansible:latest` (or use the image you built earlier, e.g. `amazonlinux2023-ansible:latest`).
+  3. Run a container from the image: `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host geerlingguy/docker-amazonlinux2023-ansible:latest` (to test my Ansible roles, I add in a volume mounted from the current working directory with ``--volume=`pwd`:/etc/ansible/roles/role_under_test:ro``).
   4. Use Ansible inside the container:
     a. `docker exec --tty [container_id] env TERM=xterm ansible --version`
     b. `docker exec --tty [container_id] env TERM=xterm ansible-playbook /path/to/ansible/playbook.yml --syntax-check`
@@ -35,4 +35,4 @@ I use Docker to test my Ansible roles and playbooks on multiple OSes using CI to
 
 ## Author
 
-Created in 2022 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+Created in 2023 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).

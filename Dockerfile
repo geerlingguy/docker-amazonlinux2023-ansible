@@ -1,4 +1,4 @@
-FROM amazonlinux:2022
+FROM amazonlinux:2023
 LABEL maintainer="Jeff Geerling"
 ENV container=docker
 
