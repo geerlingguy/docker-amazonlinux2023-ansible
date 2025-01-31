@@ -1,6 +1,6 @@
 # Amazon Linux 2023 Ansible Test Image
 
-[![CI](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/workflows/Build/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-amazonlinux2023-ansible)](https://hub.docker.com/r/geerlingguy/docker-amazonlinux2023-ansible/)
+[![Build](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/actions/workflows/build.yml/badge.svg)](https://github.com/geerlingguy/docker-amazonlinux2023-ansible/actions/workflows/build.yml) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-amazonlinux2023-ansible)](https://hub.docker.com/r/geerlingguy/docker-amazonlinux2023-ansible/)
 
 Amazon Linux 2023 Docker container for Ansible playbook and role testing.
 
